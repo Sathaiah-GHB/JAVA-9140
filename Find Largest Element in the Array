@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int mx;
+        int n=s.nextInt();
+        int [] a=new int[n];
+        for(int i=0;i<n;i++)    
+        {
+            a[i]=s.nextInt();
+        }
+        for(int i=0;i<n;i++)   
+        {
+            for(int j=i+1;j<n;j++)  
+            {
+                if(a[i]<a[j])    
+                {
+                    mx=a[i];
+                    a[i]=a[j];
+                    a[j]=mx;
+                }
+            }
+        }
+        System.out.println(a[0]);
+        
+        }
+        
+    }
+
+
