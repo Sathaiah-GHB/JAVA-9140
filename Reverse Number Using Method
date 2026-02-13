@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public void rev(int n,int d,int r){ 
+        while(n!=0){
+            d=n%10;
+            r=r*10+d;
+            n=n/10;
+    }
+        System.out.println(r);
+    }
+    
+
+    public static void main(String[] args) {
+        Solution o=new Solution();
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int d=0;
+        int r=0;
+        o.rev(n,d,r);
+    }
+        
+    
+}
