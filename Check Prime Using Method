@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public void prime(int p){
+        if(p%2==1){
+            System.out.println("Prime");
+        }
+        else{
+            System.out.println("Not Prime");
+        }
+        
+    }
+
+    public static void main(String[] args) {
+        Solution o=new Solution();
+        int p;
+        Scanner s=new Scanner(System.in);
+        p=s.nextInt();
+        o.prime(p);
+    }
+}
