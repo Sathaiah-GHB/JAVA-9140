@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String d=s.nextLine();
+        String r=d.replace(" ","");
+        System.out.println(r);
+    
+    }
+}
