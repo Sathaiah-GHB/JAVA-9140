@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+class Calc {
+    int add(int a,int b){
+        return a+b;
+    }
+    int add(int a,int b,int c){
+        return a+b+c;
+    }
+    double add(double a,double b){
+        return a+b;
+    }
+}
+    public class Main{
+
+    public static void main(String[] args) {
+        Calc d=new Calc();
+        Scanner s=new Scanner(System.in);
+        int m=s.nextInt();
+         int n=s.nextInt();
+         int o=s.nextInt();
+         double d1=s.nextInt();
+        double d2=s.nextInt();
+        System.out.println(d.add(m,n));
+        System.out.println(d.add(m,n,o));
+        System.out.println(d.add(d1,d2));
+        
+       
+    }
+}
