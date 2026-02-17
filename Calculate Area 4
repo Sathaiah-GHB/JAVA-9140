@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+class Areac{
+    int area(int a){
+        return a*a;
+    }
+    int area(int b,int c){
+        return b*c;
+}
+    double area(double d){
+        double pi=3.14;
+        return d*pi;
+}
+}
+public class main{
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        Areac r=new Areac();
+        String sh=s.nextLine();
+        if(sh.equals("Square")){
+            int m=s.nextInt();
+            System.out.println(r.area(m));
+        }
+        else if(sh.equals("Rectangle")){
+            int l=s.nextInt();
+            int b=s.nextInt();
+            System.out.println(r.area(l,b));
+        }
+        else if(sh.equals("Circle")){
+            double i=s.nextInt();
+            System.out.println(r.area(i));
+        }
+        else{
+            System.out.println("Invalid");
+        }
+    }
+}
