@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+class Rectangle {
+    int len;
+    int bre;
+Rectangle(int len,int bre){
+        this.len=len;
+        this.bre=bre;
+}
+
+void display(int len,int bre){
+        System.out.print("Area:"+len*bre);
+}
+}
+
+public class Main{
+
+    public static void main(String[] args) {
+         Scanner s=new Scanner(System.in);
+        int len=s.nextInt();
+        int bre=s.nextInt();
+        Rectangle r=new Rectangle(len,bre);
+        r.display(len,bre);
+        
+    }
+}
