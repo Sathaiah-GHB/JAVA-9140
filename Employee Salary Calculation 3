@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+class Employ {
+    String na;
+     double bas;
+Employ(String n,double b){
+        na=n;
+        bas=b;
+}
+void display(String na,double bas){
+     double hra=0.20*bas;
+    double da=0.10*bas;
+    double c=bas+hra+da;
+    System.out.println("Name:"+na);
+    System.out.print("Total Salary:"+c);
+}
+}
+
+public class Main{
+
+    public static void main(String[] args) {
+         Scanner s=new Scanner(System.in);
+        String na=s.nextLine();
+        double bas=s.nextInt();
+        Employ r=new Employ(na,bas);
+        r.display(na,bas);
+        
+    }
+}
