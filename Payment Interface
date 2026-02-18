@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+interface Payment{
+    void Pay(int am);
+}
+class CreditCard implements Payment{
+    public void Pay(int am){
+        System.out.println(am+" is paid using CreditCard");
+    }
+}
+class UPI implements Payment{
+    public void Pay(int am){
+        System.out.println(am+" is paid using UPI");
+    }
+}
+class Cash implements Payment{
+    public void Pay(int am){
+        System.out.println(am+" is paid using Cash");
+    }
+}
+public class main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        CreditCard k=new CreditCard();
+        Cash h=new Cash();
+        UPI j=new UPI();
+        String d=s.nextLine();
+        int am=s.nextInt();
+        if(d.equals("CreditCard")){
+            k.Pay(am);
+        }
+        else if(d.equals("UPI")){
+            j.Pay(am);
+        }
+        else if(d.equals("Cash")){
+            h.Pay(am);
+        }
+        else{
+            System.out.println("Not matched");
+        }
+        
+        
+    }
+    
+}
+
