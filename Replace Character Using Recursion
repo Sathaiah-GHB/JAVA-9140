@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    static String re(String t1,char o,char n){
+        return t1.replace(o,n);
+    }
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String t1=s.nextLine();
+        char o=s.next().charAt(0);
+        char n=s.next().charAt(0);
+        System.out.println(re(t1,o,n));
+       
+    }
+}
