@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+class Stud{
+    private String na;
+    private int ro;
+    private double ma;
+    public void setro(int r){
+        ro=r;
+    }
+    public void setna(String n){
+        na=n;
+    }
+    public void setma(double m){
+        ma=m;
+    }
+    public int getro(){
+        return ro;
+    }
+    public String getna(){
+        return na;
+    }
+    public double getma(){
+        return ma;
+    }
+    
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        Stud d=new Stud();
+        String n=s.nextLine();
+        int r=s.nextInt();
+        double m=s.nextDouble();
+        d.setro(r);
+        d.setna(n);
+        d.setma(m);
+        System.out.println("Name:"+d.getna());
+        System.out.println("Rollno:"+d.getro());
+        System.out.println("Marks:"+d.getma());
+    }
+}
