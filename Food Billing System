@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+abstract class Food{
+    abstract void Price(int h);}
+
+class Pizz extends Food{
+    public void Price(int h){
+        System.out.println(h*200+" rupees");
+    }
+}
+class Burg extends Food{
+    public void Price(int h){
+        System.out.println(h*100+" rupees");
+    }
+}
+
+public class main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+         Pizz k=new Pizz();
+        Burg n=new Burg();
+        String d=s.nextLine();
+        int h=s.nextInt();
+        if(d.equals("Pizza")){
+            k.Price(h);
+        }
+        else if(d.equals("Burger")){
+            n.Price(h);
+        }
+}
+    
+}
+
