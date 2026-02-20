@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class Parent{
+    void sho(){
+        System.out.println("Parent");
+    }
+}
+class Child extends Parent{
+    void prin(){
+        System.out.println("Child");
+}
+}
+public class main{
+public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        Child h=new Child();
+        h.sho();
+        h.prin();
+    }
+}
