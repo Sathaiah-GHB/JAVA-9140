@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+     }
+        
+        int mx=a[0];
+        int mx2=a[n-1];
+        for(int i=0;i<n;i++){
+            if(mx<a[i]){
+                mx2=mx;
+                mx=a[i];
+            }
+            else if(a[i]>mx2 && a[i]!=mx){
+                mx2=a[i];
+            }
+        }
+        
+        System.out.println(mx2);
+        
+    }
+}
