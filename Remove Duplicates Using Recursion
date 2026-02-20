@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main {
+
+    static String removeDuplicates(String str, String result) {
+        if (str.length() == 0) {
+            return result;
+        }
+
+        char currentChar = str.charAt(0);
+        if (result.indexOf(currentChar) == -1) {
+            result += currentChar;
+        }
+        return removeDuplicates(str.substring(1), result);
+    }
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str =s.nextLine();
+        String answer = removeDuplicates(str, "");
+        System.out.println(answer);
+    }
+}
